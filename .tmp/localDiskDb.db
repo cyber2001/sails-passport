@@ -1,0 +1,91 @@
+{
+  "data": {
+    "bookmark": [
+      {
+        "title": "yahoo.com",
+        "url": "http://yahoo.com",
+        "id": 3,
+        "createdAt": "2015-04-18T23:24:51.615Z",
+        "updatedAt": "2015-04-18T23:24:51.615Z"
+      }
+    ],
+    "user": [
+      {
+        "username": "reza",
+        "email": "light.reza@gmail.com",
+        "password": "$2a$10$8zbid0b9eOUuaslPE2QhJ.aT1hhu1RIjwE5F.baYL171oo.I5gdJu",
+        "city": "adsf",
+        "id": 1,
+        "createdAt": "2015-04-19T23:12:07.754Z",
+        "updatedAt": "2015-04-19T23:12:07.754Z"
+      },
+      {
+        "username": "ali",
+        "email": "ali@ali.com",
+        "password": "$2a$10$0uL8ULW6amepNImdBWpFDu.elXjmgjcLjOLaVCAvcbElsNjMvmnV2",
+        "city": "qom",
+        "id": 2,
+        "createdAt": "2015-04-20T00:48:20.520Z",
+        "updatedAt": "2015-04-20T00:48:20.520Z"
+      }
+    ]
+  },
+  "schema": {
+    "bookmark": {
+      "title": {
+        "type": "string"
+      },
+      "url": {
+        "type": "string"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "user": {
+      "username": {
+        "type": "string",
+        "unique": true
+      },
+      "email": {
+        "type": "string",
+        "unique": true
+      },
+      "password": {
+        "type": "string"
+      },
+      "city": {
+        "type": "string"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    }
+  },
+  "counters": {
+    "bookmark": {
+      "id": 3
+    },
+    "user": {
+      "id": 2
+    }
+  }
+}

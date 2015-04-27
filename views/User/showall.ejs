@@ -1,0 +1,17 @@
+<table class='table'>
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>city</th>
+    </tr>
+    
+    <% _.each(users, function(user){ %>
+    <tr data-id="<%= user.id %>" >
+        <td><%= user.username %></td>
+        <td><%= user.email %></td>
+        <td><%= user.city %></td>
+        
+    </tr>
+
+    <% }) %>
+</table>
